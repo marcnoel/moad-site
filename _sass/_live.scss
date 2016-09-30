@@ -1,21 +1,39 @@
-.live-list {
-  margin: 3rem 0;
+// .live-list {
+//   margin: 3rem 0;
+// }
+//
+// .live-list__item {
+//   padding: 1rem 0 ;
+//   border-bottom: 1px dashed $grey-color;
+//   display: flex;
+//   align-items: center;
+//
+//   .live-date {
+//     text-transform: uppercase;
+//   }
+//
+//   .live-title {
+//   }
+//
+//   .live-link {
+//   }
+//
+// }
+
+.contact-1 {
+  padding: $spacing-unit 0;
+  a:hover {
+      background-color: $brand-color;
+      color:white;
+    }
 }
 
-.live-list__item {
-  padding: 1rem 0 ;
-  border-bottom: 1px dashed $grey-color;
-  display: flex;
-  align-items: center;
 
-  .live-date {
-    text-transform: uppercase;
-  }
-
-  .live-title {
-  }
-
-  .live-link {
-  }
-
-}
+// .btn-primary {
+//   background-color: $brand-color;
+//   color:white;
+//   :hover {
+//     background-color: darken($brand-color, 25%);
+//     color:white;
+//   }
+// }

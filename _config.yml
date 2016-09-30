@@ -2,11 +2,11 @@
 title: moad
 email: music@moad.info
 description: 3 guys, plenty of instruments and a few PCs, moving between experimental indie and electronic rock
-baseurl: "/moad-site" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: moad_music
+twitter_username:
 facebook_username: moad.band
-youtube_username: moad clips
+youtube_username: moad videos
 soundcloud_username: moad_music
 
 

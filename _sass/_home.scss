@@ -1,11 +1,14 @@
 .main-header {
   display:flex;
-  height: 1100px;
+  height: 750px;
   background: #ffa949 url('../images/bg.jpg') no-repeat center;
   background-size: cover;
   align-items: center;
   justify-content: center;
 
+  @include media-query($small) {
+    height: 650px;
+  }
 }
 
 .album-cover {

@@ -17,13 +17,14 @@ dl, dd, ol, ul, figure {
 body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
-    background-color: $background-color;
+    // background-color: $background-color;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
     -moz-font-feature-settings: "kern" 1;
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+    background: $background-color;
 }
 
 body {
@@ -183,6 +184,7 @@ pre {
     margin-left: auto;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
+    // background-color: white;
     @extend %clearfix;
 
     @include media-query($medium) {
@@ -227,3 +229,24 @@ pre {
         }
     }
 }
+
+/**
+ * Buttons
+ */
+
+ .btn {
+   display:inline-block;
+   border: 2px solid black;
+   color: black;
+   font-weight: 700;
+   text-align: center;
+   text-decoration: none;
+   padding: 6px 12px;
+   :hover {
+     color: $brand-color;
+   }
+ }
+
+ .btn-primary {
+
+ }
