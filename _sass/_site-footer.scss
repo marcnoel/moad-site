@@ -1,0 +1,28 @@
+// -------------------------------------
+// site-footer
+// -------------------------------------
+
+.site-footer {
+  text-transform: uppercase;
+  font-family: $base-font-family;
+  padding: 1rem 0; //16px
+  min-height: 2rem; //56px
+  margin: 0;
+
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  li:first-of-type {
+    text-decoration: lowercase;
+  }
+
+  li {
+    display: inline-block;
+    align-items: center;
+    font-size: 0.9rem; //14.4px
+  }
+
+}

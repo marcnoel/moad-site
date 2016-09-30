@@ -1,0 +1,21 @@
+.live-list {
+  margin: 3rem 0;
+}
+
+.live-list__item {
+  padding: 1rem 0 ;
+  border-bottom: 1px dashed $grey-color;
+  display: flex;
+  align-items: center;
+
+  .live-date {
+    text-transform: uppercase;
+  }
+
+  .live-title {
+  }
+
+  .live-link {
+  }
+
+}

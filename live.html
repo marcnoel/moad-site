@@ -1,0 +1,37 @@
+---
+  layout: default
+  title: Live
+  images:
+    - image_path: /images/gallery/triangel-1.jpg
+---
+
+<div class="live-list">
+  <!-- <h1>Live</h1> -->
+
+  {% for live in page.live %}
+
+    <div class="row live-list__item">
+
+      <div class="col-xs-12 col-md-2">
+        <h3 class="live-date">{{ live.date}}</h3>
+      </div>
+
+      <div class="col-xs-12 col-md-8">
+        <h3 class="live-title">{{ live.title }}</h3>
+      </div>
+
+      <div class="col-xs-12 col-md-2">
+        <a href="{{ live.link }}" class="live-link">link</a>
+      </div>
+
+    </div>
+
+  {% endfor %}
+
+</div>
+
+<div>
+  <img src="/images/gallery/triangel-1.jpg" alt="">
+  <p>We don't have any lives scheduled yet. Coming soon</p>
+  <a href="mailto:music@moad.info">Contact us</a>
+</div>

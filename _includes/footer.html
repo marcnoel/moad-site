@@ -1,0 +1,25 @@
+<footer class="site-footer">
+
+    <div class="wrapper">
+
+      <ul class="social-media-list">
+        {% if site.twitter_username %}
+        <li>
+          {% include icon-twitter.html username=site.twitter_username %}
+        </li>
+        {% endif %}
+        {% if site.youtube_username %}
+        <li>
+          {% include icon-youtube.html username=site.youtube_username %}
+        </li>
+        {% endif %}
+        {% if site.soundcloud_username %}
+        <li>
+          {% include icon-soundcloud.html username=site.soundcloud_username %}
+        </li>
+        {% endif %}
+      </ul>
+
+    </div>
+
+</footer>
