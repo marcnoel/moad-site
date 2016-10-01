@@ -26,6 +26,9 @@
       background-color: $brand-color;
       color:white;
     }
+  @include media-query($small) {
+    padding: $spacing-unit/2 0;
+  }
 }
 
 

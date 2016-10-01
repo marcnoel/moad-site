@@ -31,6 +31,3 @@ Folgen Sie uns auf unserem Weg durch die Gefilde von Indie-Musik, crunchigen Bea
 Joe: Vocals, bass, guitars, keys
 Marc: Guitars, bass, keys, backing vocals
 Jérôme: Computers, looping, keys, synths, backing vocals
-
-
-**Contact us**
