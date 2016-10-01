@@ -5,19 +5,22 @@
     flex-flow: row wrap;
     display: flex;
     justify-content: space-around;
-
-    .photo-gallery__item {
-      flex: auto;
-      width: calc(33.3333% - 2rem);
-      border: 2px solid $background-color;
-
-      img {
-        width: 100%;
-        height: 100%; // review this. It should be auto...
-      }
-
+    @include media-query($small) {
+      flex-direction: column;
     }
+  }
 
+  .photo-gallery__item {
+    flex: auto;
+    width: calc(33.3333% - 2rem);
+    border: 2px solid $background-color;
+    img {
+      width: 100%;
+      height: 100%; // review this. It should be auto...
+    }
+    @include media-query($small) {
+      width: 100%;
+    }
   }
 
 }

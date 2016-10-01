@@ -1244,14 +1244,14 @@ pre {
 
 .main-header {
   display: flex;
-  height: 750px;
+  height: 80vh;
   background: #ffa949 url("../images/bg.jpg") no-repeat center;
   background-size: cover;
   align-items: center;
   justify-content: center; }
   @media screen and (max-width: 600px) {
     .main-header {
-      height: 650px; } }
+      height: 70vh; } }
 
 .album-cover {
   align-items: center; }
@@ -1261,13 +1261,19 @@ pre {
   flex-flow: row wrap;
   display: flex;
   justify-content: space-around; }
-  .gallery .photo-gallery .photo-gallery__item {
-    flex: auto;
-    width: calc(33.3333% - 2rem);
-    border: 2px solid #fdfdfd; }
-    .gallery .photo-gallery .photo-gallery__item img {
-      width: 100%;
-      height: 100%; }
+  @media screen and (max-width: 600px) {
+    .gallery .photo-gallery {
+      flex-direction: column; } }
+.gallery .photo-gallery__item {
+  flex: auto;
+  width: calc(33.3333% - 2rem);
+  border: 2px solid #fdfdfd; }
+  .gallery .photo-gallery__item img {
+    width: 100%;
+    height: 100%; }
+  @media screen and (max-width: 600px) {
+    .gallery .photo-gallery__item {
+      width: 100%; } }
 
 .contact-1 {
   padding: 32px 0; }

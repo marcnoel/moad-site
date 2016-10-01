@@ -1,13 +1,13 @@
 .main-header {
   display:flex;
-  height: 750px;
+  height: 80vh;
   background: #ffa949 url('../images/bg.jpg') no-repeat center;
   background-size: cover;
   align-items: center;
   justify-content: center;
 
   @include media-query($small) {
-    height: 650px;
+    height:70vh;
   }
 }
 
