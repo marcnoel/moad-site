@@ -8,11 +8,12 @@ twitter_username:
 facebook_username: moad.band
 youtube_username: moad videos
 soundcloud_username: moad_music
+itunes_username: itunes
 
 
 # Build settings
 markdown: kramdown
-exclude: [/node_modules]
+exclude: ["node_modules", "gulpfile.js", "package.json"]
 
 # Collections
 

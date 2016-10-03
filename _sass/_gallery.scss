@@ -18,6 +18,9 @@
       width: 100%;
       height: 100%; // review this. It should be auto...
     }
+    @include media-query($medium) {
+      width: calc(50% - 2rem);
+    };
     @include media-query($small) {
       width: 100%;
     }

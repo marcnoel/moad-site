@@ -3,10 +3,10 @@
 // -------------------------------------
 
 #site-header {
-  padding: 1rem 0; //16px;
+  padding: 1rem 0; //20px;
   font-family: $base-font-family;
   text-transform: uppercase;
-  min-height: 3.5rem; //56px
+  min-height: 3.5rem; //70px
   border-bottom: 1px solid #e8e8e8;
   background-color: $background-color;
   a:first-of-type {
@@ -29,7 +29,7 @@
   }
 
 .site-title {
-    font-size: 1.2rem; //19,2px
+    font-size: 1.2rem; //24px
     font-weight: 400;
     line-height: 3.5rem; //56px
     align-self: center;
