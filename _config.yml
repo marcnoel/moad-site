@@ -16,5 +16,3 @@ markdown: kramdown
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 
 # Collections
-
-# http://stackoverflow.com/questions/16316311/github-pages-and-relative-paths

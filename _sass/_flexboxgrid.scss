@@ -25,9 +25,10 @@
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -0.5rem;
-  margin-left: -0.5rem;
-  margin-top: $spacing-unit; //check this again
+  // margin-right: -0.5rem;
+  // margin-left: -0.5rem; // why do you need this?
+  margin-top: $spacing-unit/2; //check this again
+  margin-bottom: $spacing-unit/2; //check this again
 }
 
 .row.reverse {

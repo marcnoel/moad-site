@@ -33,25 +33,27 @@ images:
     title: Misi kino 2
   - image_path: images/gallery/misi-kino-3.jpg
     title: Misi kino 3
-  - image_path: images/gallery/misi-kino-1.jpg
+  - image_path: images/gallery/misi-kino-4.jpg
     title: Misi kino 4
   - image_path: images/gallery/misi-1.jpg
     title: Misi 1
   - image_path: images/gallery/misi-2.jpg
     title: Misi 2
-  - image_path: images/gallery/misi-3.jpg
-    title: Misi 3
   - image_path: images/gallery/acoustic-moad.jpg
     title: Acoustic moad
   - image_path: images/gallery/brf-doublemoad.jpg
     title: Brf Doublemoad
+  - image_path: images/gallery/misi-3.jpg
+    title: Misi 3
 
 ---
 <div class="gallery">
   <div class="photo-gallery">
     {% for image in page.images %}
     <div class="photo-gallery__item">
-      <img src="{{ image.image_path }}" alt="{{ image.title }}">
+      <figure>
+        <img src="{{ image.image_path }}" alt="{{ image.title }}">
+      </figure>
     </div>
     {% endfor %}
   </div>

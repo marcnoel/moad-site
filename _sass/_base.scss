@@ -83,6 +83,10 @@ img {
  * Figures
  */
 
+figure {
+  margin-bottom: 0; //added it
+}
+
 figure > img {
     display: block;
 }
@@ -98,7 +102,7 @@ figcaption {
  */
 
 ul, ol {
-    margin-left: $spacing-unit;
+    list-style: none; //changed it
 }
 
 li {
@@ -241,7 +245,7 @@ pre {
         vertical-align: middle;
 
         path {
-            fill: $grey-color;
+            fill: $text-color;
         }
     }
 }
