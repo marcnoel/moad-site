@@ -20,16 +20,16 @@
 //
 // }
 
-.contact-1 {
-  padding: $spacing-unit 0;
+.gigs-info {
+  > figure {
+    margin-bottom: $spacing-unit/2;
+  }
   a:hover {
-      background-color: $brand-color;
-      color:white;
-    }
-  @include media-query($small) {
-    padding: $spacing-unit/2 0;
+    color:$brand-color;
   }
 }
+
+
 
 
 // .btn-primary {

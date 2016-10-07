@@ -3,12 +3,18 @@
   flex-direction: column;
 }
 
+// for making the iframe responsive
+
 .iframe-container {
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 30px;
   height: 0;
   overflow: hidden;
+  margin-bottom: $spacing-unit;
+  @include media-query ($small){
+    margin-bottom: $spacing-unit/2;
+  }
 }
 
 .iframe-container iframe,
@@ -21,13 +27,26 @@
   height: 100%;
 }
 
-
-.card__music {
+.itunes-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  .cta__itunes {
+  flex-direction: row;
+  a:first-of-type {
+    margin-right: 1rem;
+  }
+}
+
+.itunes-list__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: calc(50%-3rem);
+  > a {
+    display: block;
+    :hover img {
+      transform: scale(1.1);
+    }
+  }
+  .itunes-list__cta {
     margin-top: $spacing-unit/2;
   }
 }

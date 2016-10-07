@@ -1138,11 +1138,9 @@ h3 {
     .site-footer li {
       padding: 1rem 0; } }
 
-.page-content {
-  flex: 1; }
-  @media screen and (max-width: 600px) {
-    .page-content {
-      padding: 20px 0; } }
+@media screen and (max-width: 600px) {
+  .page-content {
+    padding: 20px 0; } }
 
 /**
  * Syntax highlighting styles
@@ -1312,7 +1310,8 @@ h3 {
   width: calc(33.3333% - 2rem);
   border: 2px solid #fdfdfd; }
   .gallery .photo-gallery__item img {
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
   @media screen and (max-width: 800px) {
     .gallery .photo-gallery__item {
       width: calc(50% - 2rem); } }
@@ -1320,14 +1319,10 @@ h3 {
     .gallery .photo-gallery__item {
       width: 100%; } }
 
-.contact-1 {
-  padding: 40px 0; }
-  .contact-1 a:hover {
-    background-color: #EE8C25;
-    color: white; }
-  @media screen and (max-width: 600px) {
-    .contact-1 {
-      padding: 20px 0; } }
+.gigs-info > figure {
+  margin-bottom: 20px; }
+.gigs-info a:hover {
+  color: #EE8C25; }
 
 .video-list {
   display: flex;
@@ -1338,7 +1333,11 @@ h3 {
   padding-bottom: 56.25%;
   padding-top: 30px;
   height: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 40px; }
+  @media screen and (max-width: 600px) {
+    .iframe-container {
+      margin-bottom: 20px; } }
 
 .iframe-container iframe,
 .iframe-container object,
@@ -1349,10 +1348,20 @@ h3 {
   width: 100%;
   height: 100%; }
 
-.card__music {
+.itunes-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center; }
-  .card__music .cta__itunes {
+  flex-direction: row; }
+  .itunes-list a:first-of-type {
+    margin-right: 1rem; }
+
+.itunes-list__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: calc(50%-3rem); }
+  .itunes-list__item > a {
+    display: block; }
+    .itunes-list__item > a :hover img {
+      transform: scale(1.1); }
+  .itunes-list__item .itunes-list__cta {
     margin-top: 20px; }
