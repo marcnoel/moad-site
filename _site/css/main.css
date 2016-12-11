@@ -11,7 +11,7 @@ dl, dd, ol, ul, figure {
  * Setting rem
  */
 html {
-  font-size: 20px; }
+  font-size: 18px; }
   @media screen and (max-width: 800px) {
     html {
       font-size: 18px; } }
@@ -23,7 +23,7 @@ html {
  * Basic styling
  */
 body {
-  font: 400 20px/1.5 "Montserrat", sans-serif;
+  font: 400 18px/1.5 "Montserrat", sans-serif;
   color: #212121;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
@@ -68,7 +68,7 @@ figure > img {
   display: block; }
 
 figcaption {
-  font-size: 17.5px; }
+  font-size: 15.75px; }
 
 /**
  * Lists
@@ -186,7 +186,7 @@ pre {
     margin-bottom: 40px; }
 
 .post-meta {
-  font-size: 17.5px;
+  font-size: 15.75px;
   color: #828282; }
 
 .post-link {
