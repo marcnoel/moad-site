@@ -7,8 +7,10 @@ url: "moad.info" # the base hostname & protocol for your site
 twitter_username:
 facebook_username: moad.band
 youtube_username: moad videos
-soundcloud_username: moad_music
+soundcloud_username:
 itunes_username: itunes
+spotify_username: moad
+instagram_username:
 
 
 # Build settings

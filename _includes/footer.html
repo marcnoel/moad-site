@@ -8,22 +8,41 @@
           {% include icon-twitter.html username=site.twitter_username %}
         </li>
         {% endif %}
+
         {% if site.youtube_username %}
         <li>
           {% include icon-youtube.html username=site.youtube_username %}
         </li>
         {% endif %}
+
+        {% if site.spotify_username %}
+        <li>
+          {% include icon-spotify.html username=site.spotify_username %}
+        </li>
+        {% endif %}
+
         {% if site.soundcloud_username %}
         <li>
           {% include icon-soundcloud.html username=site.soundcloud_username %}
         </li>
+        {% endif %}
+
+        {% if site.facebook_username %}
         <li>
           {% include icon-facebook.html username=site.facebook_username %}
         </li>
+        {% endif %}
+
+        {% if site.instagram_username %}
+        <li>
+          {% include icon-instagram.html username=site.instagram_username %}
+        </li>
+        {% endif %}
+
         <li>
           {% include icon-email.html username=site.email %}
         </li>
-        {% endif %}
+
       </ul>
 
     </div>
