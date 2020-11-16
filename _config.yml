@@ -4,12 +4,12 @@ email: music@moad.info
 description: 3 guys, plenty of instruments and a few PCs, moving between experimental indie and electronic rock
 baseurl: "" # /moad-site
 url: "moad.info" # the base hostname & protocol for your site
-twitter_username:
-facebook_username: moad.band
 youtube_username: moad videos
-soundcloud_username:
-itunes_username: itunes
 spotify_username: moad
+apple_music_username: moad
+soundcloud_username:
+facebook_username: moad.band
+twitter_username:
 instagram_username:
 
 
