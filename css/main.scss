@@ -9,7 +9,7 @@
 $base-font-family: 'Montserrat', sans-serif;
 $base-font-size:   18px;
 $base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
+$small-font-size:  $base-font-size - 2;
 $base-line-height: 1.5;
 
 $spacing-unit:    40px; //2rem
@@ -41,7 +41,7 @@ $large:            980px;
 @import
         "base",
         "layout",
-        "flexboxgrid",
+        "responsiv-design",
         "typography",
         "site-header",
         "site-footer",

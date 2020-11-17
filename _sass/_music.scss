@@ -39,12 +39,17 @@
 
 // Spotify
 
+/**
 .spotify-list {
   display: flex;
   flex-direction: row;
-  a:first-of-type {
-    margin-right: 1rem;
-  }
+}
+
+.spotify-list__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: calc(50%-3rem);
 }
 
 .iframe-container.spotify{
@@ -56,29 +61,29 @@
 .iframe-container.spotify embed {
   height: 344px;
 }
+*/
 
-.spotify-list__item {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: calc(50%-3rem);
-}
 
 // Apple Music
 
 .applemusic-list {
   display: flex;
   flex-direction: row;
+/**
+  align-items: stretch;
   a:first-of-type {
-    margin-right: 1rem;
+    margin-right: 0; // previous value: 1rem
   }
+*/
 }
 
 .applemusic-list__item {
-  display: flex;
-  flex-direction: row;
+  display: flex; //nötig ??
+  margin-left: auto; // => center item
+  margin-right: auto; // => center item
+  // flex-direction: row;
   justify-content: space-between;
-  width: calc(50%-3rem);
+  // width: calc(50%-3rem);
   > a {
     display: block;
     :hover img {

@@ -13,14 +13,14 @@ dl, dd, ol, ul, figure {
  */
 
 html {
-  font-size: 18px;
+  font-size: $base-font-size;
 
   @include media-query ($medium) {
-    font-size: 18px;
+    font-size: $base-font-size;
   }
 
   @include media-query ($small) {
-    font-size: 16px;
+    font-size: $small-font-size;
   }
 
 }
