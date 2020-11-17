@@ -54,7 +54,7 @@
 .iframe-container.spotify iframe,
 .iframe-container.spotify object,
 .iframe-container.spotify embed {
-  height: 80px;
+  height: 344px;
 }
 
 .spotify-list__item {
@@ -62,15 +62,6 @@
   flex-direction: row;
   justify-content: space-between;
   width: calc(50%-3rem);
-  > a {
-    display: block;
-    :hover img {
-      transform: scale(1.1);
-    }
-  }
-  .spotify-list__cta {
-    margin-top: $spacing-unit/2;
-  }
 }
 
 // Apple Music
