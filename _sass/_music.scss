@@ -1,13 +1,7 @@
- .video-list {
-  display: flex;
-  flex-direction: column;
-}
-
 // for making the iframe responsive
 
 .iframe-container {
   position: relative;
-  padding-bottom: 56.25%;
   padding-top: 30px;
   height: 0;
   overflow: hidden;
@@ -17,10 +11,6 @@
   }
 }
 
-.iframe-container.spotify{
-  padding-bottom: 50px;
-}
-
 .iframe-container iframe,
 .iframe-container object,
 .iframe-container embed {
@@ -28,7 +18,37 @@
   top: 0;
   left: 0;
   width: 100%;
+}
+
+// Youtube
+
+.youtube-list {
+ display: flex;
+ flex-direction: column;
+}
+
+.iframe-container.youtube {
+  padding-bottom: 56.25%;
+}
+
+.iframe-container.youtube iframe,
+.iframe-container.youtube object,
+.iframe-container.youtube embed {
   height: 100%;
+}
+
+// Spotify
+
+.spotify-list {
+  display: flex;
+  flex-direction: row;
+  a:first-of-type {
+    margin-right: 1rem;
+  }
+}
+
+.iframe-container.spotify{
+  padding-bottom: 50px;
 }
 
 .iframe-container.spotify iframe,
@@ -37,15 +57,7 @@
   height: 80px;
 }
 
-.itunes-list {
-  display: flex;
-  flex-direction: row;
-  a:first-of-type {
-    margin-right: 1rem;
-  }
-}
-
-.itunes-list__item {
+.spotify-list__item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -56,7 +68,33 @@
       transform: scale(1.1);
     }
   }
-  .itunes-list__cta {
+  .spotify-list__cta {
+    margin-top: $spacing-unit/2;
+  }
+}
+
+// Apple Music
+
+.applemusic-list {
+  display: flex;
+  flex-direction: row;
+  a:first-of-type {
+    margin-right: 1rem;
+  }
+}
+
+.applemusic-list__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: calc(50%-3rem);
+  > a {
+    display: block;
+    :hover img {
+      transform: scale(1.1);
+    }
+  }
+  .applemusic-list__cta {
     margin-top: $spacing-unit/2;
   }
 }
