@@ -31,9 +31,9 @@ $large:            800px; // previous value 900px
 
 
 @mixin media-query($device) {
-    @media screen and (min-width: $device) { // previous max-width
+    @media screen and (min-width: $device) /** { // previous max-width
         @content;
-    }
+    }*/
 }
 
 
