@@ -17,6 +17,10 @@
   }
 }
 
+.iframe-container.spotify{
+  padding-bottom: 50px;
+}
+
 .iframe-container iframe,
 .iframe-container object,
 .iframe-container embed {
@@ -30,10 +34,6 @@
 .iframe-container.spotify iframe,
 .iframe-container.spotify object,
 .iframe-container.spotify embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 80px;
 }
 
