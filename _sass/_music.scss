@@ -84,6 +84,8 @@
   // flex-direction: row;
   justify-content: space-between;
   // width: calc(50%-3rem);
+  padding-left: $spacing-unit/10;
+  padding-right: : $spacing-unit/10;
   > a {
     display: block;
     :hover img {
