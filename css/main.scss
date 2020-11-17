@@ -4,22 +4,22 @@
 // Import partials from `sass_dir` (defaults to `_sass`)
 //
 
-@import '/abstracts/variables';
-@import '/abstracts/mixins';
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
 
-@import '/base/base';
-@import '/base/reset';
-@import '/base/typography';
-@import '/base/syntax-highlighting';
-@import '/base/responsiv-design2';
+@import 'base/base';
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/syntax-highlighting';
+@import 'base/responsiv-design2';
 
-@import '/components/gallery';
+@import 'components/gallery';
 
-@import '/layout/layout';
-@import '/layout/page-content';
-@import '/layout/site-footer';
-@import '/layout/site-header';
+@import 'layout/layout';
+@import 'layout/page-content';
+@import 'layout/site-footer';
+@import 'layout/site-header';
 
-@import '/pages/home';
-@import '/pages/live';
-@import '/pages/music';
+@import 'pages/home';
+@import 'pages/live';
+@import 'pages/music';
