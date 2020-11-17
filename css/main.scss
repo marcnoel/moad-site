@@ -24,14 +24,14 @@ $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
 $content-width:    800px;
-$small:            600px;
-$medium:           800px;
-$large:            980px;
+$small:            0px; // previous value 600px
+$medium:           600px; // previous value 800px
+$large:            800px; // previous value 900px
 
 
 
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
+    @media screen and (min-width: $device) { // previous max-width
         @content;
     }
 }
