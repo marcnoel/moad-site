@@ -1,25 +1,27 @@
 // Variables
 
-@charset "utf-8";
+@charset 'utf-8';
 
-$base-font-family: 'Montserrat', sans-serif;
-$base-font-size:   18px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size - 2;
-$base-line-height: 1.5;
+$base-font-family:      'Montserrat', sans-serif;
+$base-font-size:        18px;
+$base-font-weight:      400;
+$small-font-size:       $base-font-size - 2;
+$base-line-height:      1.5;
 
-$spacing-unit:    40px; //2rem
+$spacing-unit:          40px; //2rem
 
-$text-color:       #212121;
-$background-color: #fdfdfd; //#0F0F0F
-$brand-color:      #EE8C25;
+$text-color:            #212121;
+$text-hover-color:      #4990e2;
+$background-color:      #fdfdfd; //#0F0F0F
+$code-background-color: #eef;
+$brand-color:           #ee8c25;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color:            #828282;
+$grey-color-light:      lighten($grey-color, 40%);
+$grey-color-dark:       darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    800px;
-$small:            0px; // previous value 600px
-$medium:           600px; // previous value 800px
-$large:            800px; // previous value 900px
+$content-width:         800px;
+$small:                 0; // previous value 600px
+$medium:                600px; // previous value 800px
+$large:                 800px; // previous value 900px
