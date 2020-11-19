@@ -1,7 +1,10 @@
+// ******************************** /
 // Variables
+// ******************************** /
 
 @charset 'utf-8';
 
+// Website-Styling-Variables
 $base-font-family:      'Montserrat', sans-serif;
 $base-font-size:        18px;
 $base-font-weight:      400;
@@ -10,18 +13,31 @@ $base-line-height:      1.5;
 
 $spacing-unit:          40px; //2rem
 
+$logo-color:            #212121;
+$home-bg-color:         #ffa949;
+
 $text-color:            #212121;
 $text-hover-color:      #4990e2;
 $background-color:      #fdfdfd; //#0F0F0F
 $code-background-color: #eef;
 $brand-color:           #ee8c25;
+$button-color:          #000;
 
+$black-color:           #000;
 $grey-color:            #828282;
 $grey-color-light:      lighten($grey-color, 40%);
 $grey-color-dark:       darken($grey-color, 25%);
 
+
+
 // Width of the content area
 $content-width:         800px;
-$small:                 0; // previous value 600px
-$medium:                600px; // previous value 800px
-$large:                 800px; // previous value 900px
+$small-min:             1px; // added
+$small-max:             600px; // added
+$small:                 600px;
+$medium-min:            601px; // added
+$medium-max:            800px; // added
+$medium:                800px;
+$large-min:             801px; // added
+$large-max:             900px; // added
+$large:                 900px;

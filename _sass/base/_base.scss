@@ -1,4 +1,12 @@
+// ******************************** /
 // Reset some basic elements
+// ******************************** /
+
+// Global Reset
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body,
 h1,
@@ -21,15 +29,14 @@ figure {
 }
 
 // Setting rem
-
 html {
   font-size: $base-font-size;
 
-  @include media-query ($medium) {
+  @include media-query ($medium-min, $medium-max) {
     font-size: $base-font-size;
   }
 
-  @include media-query ($small) {
+  @include media-query ($small-min, $small-max) {
     font-size: $small-font-size;
   }
 
@@ -41,15 +48,15 @@ body {
   -moz-font-feature-settings: 'kern' 1;
   -ms-font-feature-settings: 'kern' 1;
   -webkit-font-feature-settings: 'kern' 1;
-  font-feature-settings: 'kern' 1;
   -webkit-text-size-adjust: 100%;
   background: $background-color;
   color: $text-color;
-  height: 100%;
-  flex-direction: column;
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-  font-kerning: normal;
   display: flex;
+  flex-direction: column;
+  font: $base-font-weight #{$base-font-size} / #{$base-line-height} $base-font-family;
+  font-feature-settings: 'kern' 1;
+  font-kerning: normal;
+  height: 100%;
   min-height: 100vh;
 }
 
@@ -170,6 +177,7 @@ code {
 pre {
   overflow-x: auto;
   padding: 8px 12px;
+
   > code {
     border: 0;
     padding-left: 0;
@@ -180,20 +188,20 @@ pre {
 // Wrapper
 
 .wrapper {
+  margin-left: auto;
+  margin-right: auto;
   max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
   max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $spacing-unit;
   padding-left: $spacing-unit;
+  padding-right: $spacing-unit;
   // background-color: white;
   @extend %clearfix;
 
-  @include media-query($medium) {
+  @include media-query($medium-min, $medium-max) {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
+    max-width: calc(#{$content-width} - (#{$spacing-unit}));
     padding-left: $spacing-unit / 2;
+    padding-right: $spacing-unit / 2;
   }
 }
 
@@ -215,6 +223,7 @@ pre {
     height: 16px;
     vertical-align: middle;
     width: 16px;
+
     path {
       fill: $text-color;
     }
@@ -224,18 +233,18 @@ pre {
 // Buttons
 
 .btn {
-  display:inline-block;
-  border: 2px solid black;
-  color: black;
+  border: 2px solid $button-color;
+  color: $button-color;
+  display: inline-block;
   font-weight: 700;
+  padding: 6px 12px;
   text-align: center;
   text-decoration: none;
-  padding: 6px 12px;
+
   :hover {
     color: $brand-color;
   }
 }
 
- .btn-primary {
-
- }
+// .btn-primary {
+// }

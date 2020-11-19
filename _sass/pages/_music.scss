@@ -1,30 +1,34 @@
+// ******************************** /
+// Page: music
+// ******************************** /
+
 // for making the iframe responsive
 
 .iframe-container {
-  position: relative;
-  padding-top: 30px;
   height: 0;
-  overflow: hidden;
   margin-bottom: $spacing-unit;
-  @include media-query ($small){
-    margin-bottom: $spacing-unit/2;
+  overflow: hidden;
+  padding-top: 30px;
+  position: relative;
+  @include media-query ($small-min, $small-max) {
+    margin-bottom: $spacing-unit / 2;
   }
 }
 
 .iframe-container iframe,
 .iframe-container object,
 .iframe-container embed {
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
 }
 
 // Youtube
 
 .youtube-list {
- display: flex;
- flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .iframe-container.youtube {
@@ -39,29 +43,28 @@
 
 // Spotify
 
-/**
-.spotify-list {
-  display: flex;
-  flex-direction: row;
-}
 
-.spotify-list__item {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: calc(50%-3rem);
-}
+//.spotify-list {
+//  display: flex;
+//  flex-direction: row;
+//}
 
-.iframe-container.spotify{
+//.spotify-list__item {
+//  display: flex;
+//  flex-direction: row;
+//  justify-content: space-between;
+//  width: calc(50%-3rem);
+//}
+
+.iframe-container.spotify {
   padding-bottom: 50px;
 }
 
-.iframe-container.spotify iframe,
-.iframe-container.spotify object,
-.iframe-container.spotify embed {
-  height: 344px;
-}
-*/
+//.iframe-container.spotify iframe,
+//.iframe-container.spotify object,
+//.iframe-container.spotify embed {
+//  height: 344px;
+//}
 
 
 // Apple Music
@@ -69,23 +72,24 @@
 .applemusic-list {
   display: flex;
   flex-direction: row;
-/**
-  align-items: stretch;
-  a:first-of-type {
-    margin-right: 0; // previous value: 1rem
-  }
-*/
+
+  // align-items: stretch;
+  // a:first-of-type {
+  //   margin-right: 0; // previous value: 1rem
+  // }
+
 }
 
 .applemusic-list__item {
   display: flex; //nötig ??
+  justify-content: space-between;
   margin-left: auto; // => center item
   margin-right: auto; // => center item
   // flex-direction: row;
-  justify-content: space-between;
   // width: calc(50%-3rem);
-  padding-left: $spacing-unit/10;
-  padding-right: : $spacing-unit/10;
+  padding-left: $spacing-unit / 10;
+  padding-right: $spacing-unit / 10;
+
   > a {
     display: block;
     :hover img {
@@ -93,6 +97,6 @@
     }
   }
   .applemusic-list__cta {
-    margin-top: $spacing-unit/2;
+    margin-top: $spacing-unit / 2;
   }
 }

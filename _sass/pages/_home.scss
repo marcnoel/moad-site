@@ -1,13 +1,17 @@
+// ******************************** /
+// Page: home
+// ******************************** /
+
 .main-header {
-  display:flex;
-  height: 80vh;
-  background: #ffa949 url('../images/bg.jpg') no-repeat center;
-  background-size: cover;
   align-items: center;
+  background: $home-bg-color url('../images/bg.jpg') no-repeat center;
+  background-size: cover;
+  display: flex;
+  height: 80vh;
   justify-content: center;
 
-  @include media-query($small) {
-    height:70vh;
+  @include media-query($small-min, $small-max) {
+    height: 70vh;
   }
 }
 

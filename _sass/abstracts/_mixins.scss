@@ -1,7 +1,15 @@
+// ******************************** /
 // Mixins
+// ******************************** /
 
 @mixin media-query($device) {
-    @media screen and (min-width: $device)  { // previous max-width
-        @content;
-    }
+  @media screen and (max-width: $device)  { // previous max-width
+    @content;
+  }
+}
+
+@mixin media-query($device-min, $device-max) {
+  @media screen and (min-width: $device-min) and  (max-width: $device-max) { // previous max-width
+    @content;
+  }
 }

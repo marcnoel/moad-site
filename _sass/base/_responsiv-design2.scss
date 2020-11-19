@@ -1,35 +1,48 @@
-@include media-query ($small) {
-  [class*="col-"] {
-    width: 100%;
-  }
+// ******************************** /
+// Responsive Webdesign Elements NOT USED
+// ******************************** /
+
+@include media-query ($small-min, $small-max) {
+  .col-sm-1 {min-width: 8.33%;}
+  .col-sd-2 {min-width: 16.66%;}
+  .col-sd-3 {min-width: 25%;}
+  .col-sd-4 {min-width: 33.33%;}
+  .col-sd-5 {min-width: 41.66%;}
+  .col-sd-6 {min-width: 50%;}
+  .col-sd-7 {min-width: 58.33%;}
+  .col-sd-8 {min-width: 66.66%;}
+  .col-sd-9 {min-width: 75%;}
+  .col-sd-10 {min-width: 83.33%;}
+  .col-sd-11 {min-width: 91.66%;}
+  .col-sd-12 {min-width: 100%;}
 }
 
-@include media-query ($medium) {
-  .col-md-1 {width: 8.33%;}
-  .col-md-2 {width: 16.66%;}
-  .col-md-3 {width: 25%;}
-  .col-md-4 {width: 33.33%;}
-  .col-md-5 {width: 41.66%;}
-  .col-md-6 {width: 50%;}
-  .col-md-7 {width: 58.33%;}
-  .col-md-8 {width: 66.66%;}
-  .col-md-9 {width: 75%;}
-  .col-md-10 {width: 83.33%;}
-  .col-md-11 {width: 91.66%;}
-  .col-md-12 {width: 100%;}
+@include media-query ($medium-min, $medium-max) {
+  .col-md-1 {min-width: 8.33%;}
+  .col-md-2 {min-width: 16.66%;}
+  .col-md-3 {min-width: 25%;}
+  .col-md-4 {min-width: 33.33%;}
+  .col-md-5 {min-width: 41.66%;}
+  .col-md-6 {min-width: 50%;}
+  .col-md-7 {min-width: 58.33%;}
+  .col-md-8 {min-width: 66.66%;}
+  .col-md-9 {min-width: 75%;}
+  .col-md-10 {min-width: 83.33%;}
+  .col-md-11 {min-width: 91.66%;}
+  .col-md-12 {min-width: 100%;}
 }
 
-@include media-query ($large) { {
-  .col-lg-1 {width: 8.33%;}
-  .col-lg-2 {width: 16.66%;}
-  .col-lg-3 {width: 25%;}
-  .col-lg-4 {width: 33.33%;}
-  .col-lg-5 {width: 41.66%;}
-  .col-lg-6 {width: 50%;}
-  .col-lg-7 {width: 58.33%;}
-  .col-lg-8 {width: 66.66%;}
-  .col-lg-9 {width: 75%;}
-  .col-lg-10 {width: 83.33%;}
-  .col-lg-11 {width: 91.66%;}
-  .col-lg-12 {width: 100%;}
+@include media-query ($large-min, $large-max) {
+  .col-lg-1 {min-width: 8.33%;}
+  .col-lg-2 {min-width: 16.66%;}
+  .col-lg-3 {min-width: 25%;}
+  .col-lg-4 {min-width: 33.33%;}
+  .col-lg-5 {min-width: 41.66%;}
+  .col-lg-6 {min-width: 50%;}
+  .col-lg-7 {min-width: 58.33%;}
+  .col-lg-8 {min-width: 66.66%;}
+  .col-lg-9 {min-width: 75%;}
+  .col-lg-10 {min-width: 83.33%;}
+  .col-lg-11 {min-width: 91.66%;}
+  .col-lg-12 {min-width: 100%;}
 }

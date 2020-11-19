@@ -1,50 +1,44 @@
-// -------------------------------------
-// typography
-// -------------------------------------
+// ******************************** /
+// Typography
+// ******************************** /
 
 h1 {
-   font-size: 3em; //20px*3=60px
+  font-size: 3em; //20px*3=60px
+  @include media-query($medium-min, $medium-max) {
+    font-size: 2em; //20px*2=40px
+ }
 
-   @include media-query($medium) {
-     font-size: 2em; //20px*2=40px
-   }
-
-   @include media-query($small) {
-     font-size: 1.5em; //20px*1,5=30px
-   }
-
+  @include media-query($small-min, $small-max) {
+    font-size: 1.5em; //20px*1,5=30px
+  }
 }
 
 h2 {
-   font-size: 2em; //20px*2=40px
+  font-size: 2em; //20px*2=40px
 
-   @include media-query($small) {
-     font-size: 1.25em; //20px*1.25=25px
-   }
-
+  @include media-query($small-min, $small-max) {
+    font-size: 1.25em; //20px*1.25=25px
+  }
 }
 
 h3 {
-   font-size: 1.5em; //20px*1.5=30px
+  font-size: 1.5em; //20px*1.5=30px
 
-   @include media-query($small) {
-     font-size: 1.15em; //20px*1.15=23px
-   }
-
+  @include media-query($small-min, $small-max) {
+    font-size: 1.15em; //20px*1.15=23px
+  }
 }
 
 .lead {
-   font-size: 1.4em;
-   line-height: 1.5;
+  font-size: 1.4em;
+  line-height: 1.5;
 
-   @include media-query($medium) {
-     font-size: 1.2em; //20px*1.2=24px
-     line-height: 1.4;
-   }
-
-   @include media-query($small) {
-     font-size: 1.15em; //23px
-     line-height: 1.3;
-   }
-
+  @include media-query($medium-min, $medium-max) {
+    font-size: 1.2em; //20px*1.2=24px
+    line-height: 1.4;
+  }
+  @include media-query($small-min, $small-max) {
+    font-size: 1.15em; //23px
+    line-height: 1.3;
+  }
 }

@@ -1,19 +1,20 @@
-// -------------------------------------
+// ******************************** /
 // site-header
-// -------------------------------------
+// ******************************** /
 
 #site-header {
-  padding: 1rem 0; //20px;
-  font-family: $base-font-family;
-  text-transform: uppercase;
-  min-height: 3.5rem; //70px
-  border-bottom: 1px solid #e8e8e8;
   background-color: $background-color;
+  border-bottom: 1px solid $grey-color-light;
+  font-family: $base-font-family;
+  min-height: 3.5rem; //70px
+  padding: 1rem 0; //20px;
+  text-transform: uppercase;
+
   a:first-of-type {
     text-decoration: none;
   }
 
-  @include media-query($small) {
+  @include media-query($small-min, $small-max) {
     display: flex;
   }
 
@@ -23,43 +24,43 @@
   display: flex;
   justify-content: space-between;
 
-  @include media-query($small) {
+  @include media-query($small-min, $small-max) {
     flex-direction: column;
     margin: 0 auto;
   }
 
-.site-title {
+  .site-title {
+    align-self: center;
     font-size: 1.2rem; //24px
     font-weight: 400;
     line-height: 3.5rem; //56px
-    align-self: center;
+
     .logo {
-      fill: black;
+      fill: $logo-color;
     }
   }
 
-.nav {
-    margin-left: 0;
-    margin-bottom: 0;
+  .nav {
     align-self: center;
     display: flex;
-    justify-content: space-between;
     font-size: 0.9rem;
-
-    @include media-query($small) {
+    justify-content: space-between;
+    margin-bottom: 0;
+    margin-left: 0;
+    @include media-query($small-min, $small-max) {
       margin-bottom: 0;
     }
 
     .nav__item {
       display: inline-block;
-      padding: 0 10px;
       font-weight: 700;
+      padding: 0 10px;
 
       a {
         text-decoration: none;
 
         &:hover {
-        text-decoration: underline;
+          text-decoration: underline;
         }
 
       }

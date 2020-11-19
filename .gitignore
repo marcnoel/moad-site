@@ -1,2 +1,19 @@
+# mac_os specific
+.DS_Store
 
+# atom specific
 .sass-lint.yml
+
+# GitHub specific
+.git/
+
+# only localy needed jekyll files and directorys
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata/
+
+# only localy needed gulp files and directorys
+package.json
+package-lock.json
+node_modules/
